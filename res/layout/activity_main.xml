@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/startText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/start_text" />
+
+    <TextView
+        android:id="@+id/promptStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startText"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/promptStatus"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/valueStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/promptStatus"
+        android:layout_alignBottom="@+id/promptStatus"
+        android:layout_toRightOf="@id/promptStatus"
+        android:layout_marginLeft="25dp"
+        android:text="@string/valueStatus"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <CheckBox
+        android:id="@+id/promptMCC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/valueStatus"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"        
+        android:text="@string/promptMCC"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/valueMCC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/promptMCC"
+        android:layout_alignBottom="@+id/promptMCC"
+        android:layout_alignLeft="@+id/valueStatus"
+        android:text="@string/valueMCC"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <CheckBox
+        android:id="@+id/promptMNC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/promptMCC"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"        
+        android:text="@string/promptMNC"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/valueMNC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/promptMNC"
+        android:layout_alignBottom="@+id/promptMNC"
+        android:layout_alignLeft="@+id/valueStatus"
+        android:text="@string/valueMNC"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/promptMNC"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:onClick="startIdentification"
+        android:text="@string/start" />
+
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/startButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:onClick="restart"
+        android:text="@string/restart" />
+
+    <CheckBox
+        android:id="@+id/testMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/restartButton"
+      	android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:onClick="testModeChanged"
+        android:text="@string/promptTestMode" />
+    
+</RelativeLayout>

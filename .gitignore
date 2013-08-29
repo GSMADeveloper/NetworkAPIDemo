@@ -18,3 +18,8 @@ local.properties
 # Eclipse project files
 .classpath
 .project
+4
+d
+ds
+emulator.sh
+test/discovery.txt
