@@ -43,9 +43,9 @@ public class OpenIDUtils {
 		bodyFields.put("openid.mode", "associate");
 		bodyFields.put("openid.assoc_type", "HMAC-SHA256");
 		bodyFields.put("openid.session_type", "no-encryption");
-		bodyFields.put("openid.ns.ui",
-				"http://specs.openid.net/extensions/ui/1.0");
-		bodyFields.put("openid.ui.mode", "x-mobile");
+//		bodyFields.put("openid.ns.ui",
+//				"http://specs.openid.net/extensions/ui/1.0");
+//		bodyFields.put("openid.ui.mode", "x-mobile");
 
 		/*
 		 * encode the parameters into a form suitable to send using an HTTP GET
@@ -161,13 +161,17 @@ public class OpenIDUtils {
 		bodyFields.put("openid.ax.mode", "fetch_request");
 		
 		bodyFields.put("openid.ax.required", "email,firstname,lastname");
-		bodyFields.put("openid.ax.if_available", "country,language");
+		bodyFields.put("openid.ax.if_available", "country,language,city,prefix,postaladdress,postalcode");
 		
+		bodyFields.put("openid.ax.type.city", "http://openid.net/schema/contact/city/home");
 		bodyFields.put("openid.ax.type.country", "http://openid.net/schema/contact/country/home");
 		bodyFields.put("openid.ax.type.email", "http://openid.net/schema/contact/internet/email");
+		bodyFields.put("openid.ax.type.prefix", "http://openid.net/schema/namePerson/prefix");
 		bodyFields.put("openid.ax.type.firstname", "http://openid.net/schema/namePerson/first");
 		bodyFields.put("openid.ax.type.lastname", "http://openid.net/schema/namePerson/last");
 		bodyFields.put("openid.ax.type.language", "http://openid.net/schema/language/pref");
+		bodyFields.put("openid.ax.type.postaladdress", "http://openid.net/schema/contact/postaladdress/home");
+		bodyFields.put("openid.ax.type.postalcode", "http://openid.net/schema/contact/postalcode/home");
 
 		/*
 		 * form the resultant Uri from the baseUri and all the OpenID parameters
