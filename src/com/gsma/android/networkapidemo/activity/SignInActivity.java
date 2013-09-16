@@ -1,23 +1,13 @@
 package com.gsma.android.networkapidemo.activity;
 
-import java.util.Locale;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
-import android.widget.Toast;
 
 import com.gsma.android.networkapidemo.R;
-import com.gsma.android.networkapidemo.utils.ParameterList;
 
 /*
  * initiate the process of sign-in using the OperatorID API. 

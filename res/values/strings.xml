@@ -37,6 +37,7 @@
 	<string name="signInRejectHeading">Not Identified</string>
 	<string name="signInRejectInfo">Sorry you decided not to sign in through your mobile operator.</string>
 	
+	<string name="completionAttributes">Attributes</string>
 	<string name="completionPageRestart">Run again</string>
 			
 	<string name="discoveryCompleteText">Operator Discovery Complete</string>
@@ -47,7 +48,23 @@
 	<string name="discoveryTest">Test</string>
 	<string name="discoveryNotYetImplemented">Not yet implemented</string>
 					
-	
-	
-	
+	<string name="attributesHeading">Attributes</string>
+	<string name="attributesPromptPrefix">Prefix</string>
+	<string name="attributesValuePrefix"></string>
+	<string name="attributesPromptFirstName">First Name</string>
+	<string name="attributesValueFirstName"></string>
+	<string name="attributesPromptLastName">Last Name</string>
+	<string name="attributesValueLastName"></string>
+	<string name="attributesPromptCity">City</string>
+	<string name="attributesValueCity"></string>
+	<string name="attributesPromptCountry">Country</string>
+	<string name="attributesValueCountry"></string>
+	<string name="attributesPromptLanguage">Language</string>
+	<string name="attributesValueLanguage"></string>
+	<string name="attributesPromptPostalCode">Postal Code</string>
+	<string name="attributesValuePostalCode"></string>
+	<string name="attributesPromptPostalAddress">Postal Address</string>
+	<string name="attributesValuePostalAddress"></string>
+	<string name="attributesPageRestart">Run again</string>
+		
 </resources>
